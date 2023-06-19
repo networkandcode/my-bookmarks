@@ -1,0 +1,29 @@
+{
+  "name": "my-bookmarks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "lint": "next lint",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/networkandcode/my-bookmarks.git"
+  },
+  "author": "Shakir",
+  "bugs": {
+    "url": "https://github.com/networkandcode/my-bookmarks/issues"
+  },
+  "homepage": "https://github.com/networkandcode/my-bookmarks#readme",
+  "dependencies": {
+    "@nextui-org/react": "^1.0.0-beta.13",
+    "appwrite": "^11.0.0",
+    "next": "^13.4.6",
+    "next-themes": "^0.2.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
