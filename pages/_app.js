@@ -1,4 +1,5 @@
 import Header from '../components/Header'
+import { DataProvider, } from '../hooks/useData'
 import { createTheme, NextUIProvider } from '@nextui-org/react'
 import { ThemeProvider } from 'next-themes'
 
@@ -22,7 +23,9 @@ const MyApp = ({ Component, pageProps }) => {
         >
             <NextUIProvider>
                 <Header/>
-                <Component {...pageProps} />
+                <DataProvider>
+                    <Component {...pageProps} />
+                </DataProvider>
             </NextUIProvider>
         </ThemeProvider>
 

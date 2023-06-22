@@ -1,11 +1,20 @@
-import AddBookmark from "../components/AddBookmark"
+import AddBookmark from '../components/AddBookmark'
+import { useData, } from '../hooks/useData'
 
 const Bookmarks = () => {
+    const data = useData()
+    const { bookmarks, } = data
+
     return (
-        <>
-            <AddBookmark/>
-            Bookmarks
-        </>
+        <div>
+            <AddBookmark />
+            {bookmarks.map(bookmark => (
+                <div>
+                    {bookmark.$id}
+                    {bookmark.url}
+                </div>
+            ))}
+        </div>
     )
 }
 
