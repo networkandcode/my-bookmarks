@@ -4,7 +4,7 @@ import { useState, } from 'react'
 
 const AddBookmark = () => {
     const data = useData()
-    const { addBookmark, } = data
+    const { addDocument, } = data
 
     const [ newBookmark, setNewBookmark, ] = useState({})
 
@@ -15,7 +15,8 @@ const AddBookmark = () => {
     }
 
     const onClick = () => {
-        addBookmark(newBookmark)
+        addDocument(newBookmark)
+        setNewBookmark({})
     }
 
     return (

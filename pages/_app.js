@@ -22,8 +22,8 @@ const MyApp = ({ Component, pageProps }) => {
             }}
         >
             <NextUIProvider>
-                <Header/>
                 <DataProvider>
+                    <Header/>
                     <Component {...pageProps} />
                 </DataProvider>
             </NextUIProvider>
